@@ -5,16 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:fitness_App"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Fittness App" Height="450" Width="800">
     <Border Padding="40" Background="Black">
         <StackPanel Background="Black">
-            <Button x:Name="BackFromLoginButton" Content="Back" Background="#FF0BDA51" FontSize="25" Foreground="#FFF0E8E8"/>
-            <Label Content="User" HorizontalContentAlignment="Center" FontSize="25" Foreground="#FFF0E8E8" Background="Black"/>
-            <TextBox x:Name="UserTextBox" HorizontalContentAlignment="Center" FontSize="25"/>
+            <Button x:Name="BackButton" Content="Back" HorizontalAlignment="Left" Background="#FF0BDA51" FontSize="22" Foreground="#FFF0E8E8" Margin="110,0,0,0" Height="35" Width="120"/>
+            <Label Content="Username" HorizontalContentAlignment="Center" FontSize="25" Foreground="#FFF0E8E8" Background="Black"/>
+            <TextBox x:Name="UserTextBox" HorizontalContentAlignment="Left" FontSize="25" Margin="110,0"/>
             <Label Content="Password" HorizontalContentAlignment="Center" FontSize="25" Foreground="#FFF0E8E8" Background="Black"/>
-            <TextBox x:Name="PasswordTextBox" HorizontalContentAlignment="Center" FontSize="25"/>
-            <RadioButton x:Name="RememberMeRadioButton" Content="Remeber me" Margin="10" HorizontalAlignment="Center" Foreground="#FFF0E8E8" Background="White"/>
-            <Button x:Name="LoginButton" Content="Login" Background="#FF0BDA51" FontSize="25" Foreground="#FFF0E8E8"/>
+            <TextBox x:Name="PasswordTextBox" HorizontalContentAlignment="Left" FontSize="25" Margin="110,0"/>
+            <StackPanel Orientation="Horizontal" Background="Black" Height="79">
+                <Button x:Name="LoginButton" Content="Sign in" Background="#FF0BDA51" FontSize="25" Foreground="#FFF0E8E8" Margin="110,0,0,0" Height="44" Width="242"/>
+                <CheckBox x:Name="RememberMeRadioButton" Content="Remember me" FontSize="18" Margin="30,17,0,17" Foreground="#FFF0E8E8" Background="White" HorizontalAlignment="Left" Width="173"/>
+            </StackPanel>
         </StackPanel>
     </Border>
 </Window>
